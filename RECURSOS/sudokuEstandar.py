@@ -16,7 +16,7 @@ def compEstandar(matrix):
 if __name__ == '__main__':
     import sys
     sys.path.append('..')
-    import TESTS.casosTestSudoku as casosTest
+    import CASOSTESTS.casosTestSudoku as casosTest
 
     for caso in casosTest.__dict__:
         if not caso.startswith('__'):

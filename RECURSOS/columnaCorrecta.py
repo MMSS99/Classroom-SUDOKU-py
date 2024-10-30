@@ -23,7 +23,7 @@ def compColumnas(matrix):
     return True
 
 if __name__ == '__main__':
-    import TESTS.casosTestSudoku as casosTest
+    import CASOSTESTS.casosTestSudoku as casosTest
 
     for caso in casosTest.__dict__:
         if not caso.startswith('__'):

@@ -3,7 +3,7 @@
 # Requires a PYTHONPATH and __init__ (709 librorata) on /RECURSOS/ to initialize????
     
 if __name__ == '__main__':
-    import TESTS.casosTestSudoku as casosTest
+    import CASOSTESTS.casosTestSudoku as casosTest
     from RECURSOS.comprobarSudoku import compSudoku
 
     for caso in casosTest.__dict__:
