@@ -28,4 +28,4 @@ if __name__ == '__main__':
     for caso in casosTest.__dict__:
         if not caso.startswith('__'):
 
-            print (casosTest.__dict__[caso] + [", ¿Son las columnas del sudoku correctas? = "] + [compColumnas(casosTest.__dict__[caso])])
+            print ([casosTest.__dict__[caso]] + [", ¿Son las columnas del sudoku correctas? = "] + [compColumnas(casosTest.__dict__[caso])])

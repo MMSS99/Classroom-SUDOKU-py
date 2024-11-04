@@ -35,7 +35,16 @@ cuadradoIncorrectoFila = [[1, 2, 3],
 cuadradoIncorrectoColumna = [[1, 2, 3],
               [2, 3, 1],
               [3, 1]]
+
 inputVacio = [[]]
+
+tipoDatoErroneo = 'aaaaaaaa'
+
+tipoDatoErroneo2 = 111111111111
+
+numerosNegativos = [[-1, 2, 3],
+           [2, 3, 1],
+           [3, 1, 2]]
 
 # Para evitar importar una variable al usar:
 # from modulo import *

@@ -9,5 +9,5 @@ if __name__ == '__main__':
     for caso in casosTest.__dict__:
         if not caso.startswith('__'):
 
-            print (casosTest.__dict__[caso] + [", ¿Es un sudoku correcto? = "] + [compSudoku(casosTest.__dict__[caso])])
+            print ([casosTest.__dict__[caso]] + [", ¿Es un sudoku correcto? = "] + [compSudoku(casosTest.__dict__[caso])])
 

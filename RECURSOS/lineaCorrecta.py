@@ -11,9 +11,9 @@ def compLineas(matrix):
     if compEstandar(matrix) == False:
         return False
     
-    for i in matrix:
-        for j in i:
-            if i.count(j) != 1:
+    for linea in matrix:
+        for numerin in linea:
+            if linea.count(numerin) != 1:
                 return False
     return True
             
@@ -23,4 +23,4 @@ if __name__ == '__main__':
     for caso in casosTest.__dict__:
         if not caso.startswith('__'):
 
-            print (casosTest.__dict__[caso] + [", ¿Son las líneas del sudoku correctas? = "] + [compLineas(casosTest.__dict__[caso])])
+            print ([casosTest.__dict__[caso]] + [", ¿Son las líneas del sudoku correctas? = "] + [compLineas(casosTest.__dict__[caso])])
