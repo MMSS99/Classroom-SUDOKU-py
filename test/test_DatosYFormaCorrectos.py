@@ -13,6 +13,9 @@ import CASOSTESTS.casosTestSudoku as casosTest
                                 (casosTest.cuadradoIncorrectoFila, False),
                                 (casosTest.cuadradoIncorrectoColumna, False),
                                 (casosTest.inputVacio, False),
+                                (casosTest.unaListaUnValor, False),
+                                (casosTest.tipoDatoErroneo, False),
+                                (casosTest.tipoDatoErroneo2, False),
                                 (casosTest.unaListaUnValor, False)])
 
 def test_comprobarDatos(casoSudoku, esCorrecto):
