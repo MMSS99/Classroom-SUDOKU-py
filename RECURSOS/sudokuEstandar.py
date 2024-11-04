@@ -1,13 +1,21 @@
 #Comprobamos que el sudoku no tenga una lista en su interior que rompa su forma de cuadrado excediendo en carácteres el número de listas en la matriz.
 
 def compEstandar(matrix):
+    if esMatriz(matrix) and esNumerica(matrix):
+        return True
+    else:
+        return False
 
+def esMatriz(matrix):
     if isinstance(matrix, list) == False:
         return False
     
     if not matrix or len(matrix) < 2:
         return False
     
+    return True
+
+def esNumerica(matrix):
     for i in (matrix):
         if len(i) != len(matrix):
             return False
@@ -17,6 +25,8 @@ def compEstandar(matrix):
             if i[j] < 1:
                 return False
     return True
+
+
 
 if __name__ == '__main__':
     import sys
